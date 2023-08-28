@@ -128,31 +128,76 @@ table {
   border-spacing: 0;
 }
 
-/* CSS Custom Code */
+/* ---------------------------------------- */
+/* Custom CSS */
+/* ---------------------------------------- */
 
-/* General Styles */
-
-*,
-*:before,
-*:after {
+/* Global */
+* {
   box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
-  line-height: 1.5;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/assets/media/pattern-1.jpg");
+  line-height: 1.4;
+  font-family: sans-serif;
+  background: linear-gradient(rgba(110, 90, 58, 0.7), rgba(110, 90, 58, 0.7)),
+    url("../media/pattern-1.jpg") 0 0 no-repeat;
   background-size: cover;
-  font-family: "Ms Madi", cursive;
-  background-attachment: fixed;
 }
 
 .container {
-  width: 80%;
-  max-width: 1600px;
-  padding: 0 16px;
+  width: 1500px;
   margin: 0 auto;
+}
+
+.inner-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typography ------------------------------ */
+h1 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.box-1-3 {
+  height: 300px;
+  background-color: #ff0248;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box-1-1 {
+  height: 600px;
+  background: linear-gradient(
+      to right,
+      rgba(108, 116, 104, 0.7),
+      rgba(184, 82, 51, 0.7)
+    ),
+    url("../media/pic-1.jpg") 0 60% no-repeat;
+  background-size: cover;
+}
+
+.box-1-1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Layout */
+.header {
+  padding: 24px 0;
+}
+
+.col-3,
+.col-1 {
+  padding: 48px 0;
 }
 
 .flex {
@@ -161,62 +206,24 @@ body {
   align-items: center;
 }
 
-.center {
+.box-1-3 {
+  flex: 0 1 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* All */
-
-/* Typography */
-h1 {
-  font-size: 96px;
-  /* border: 2px solid red; */
-  text-align: center;
-  color: #5bb1ac;
-  font-weight: 900;
+.box-1-1 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box {
-  font-size: 48px;
-  font-weight: 600;
-  color: #a4ccd1;
-  border-radius: 8px;
+.linear-gradient {
+  background: linear-gradient(to right, #302a23, #f60146);
 }
 
-/* layout */
-
-header,
-section {
-  margin: 40px 0;
-}
-
-.bg-color .box {
-  height: 400px;
-  flex: 0 1 30%;
-}
-
-.bg-image-box {
-  height: 800px;
-  width: 100%;
-  background: linear-gradient(
-      to top left,
-      rgba(247, 92, 2, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/assets/media/pic-1.jpg") no-repeat;
-  background-size: cover;
-}
-
-.solid-box {
-  background-color: #ff0648;
-}
-
-.lg-box {
-  background: linear-gradient(to left, #fa0547, #2c2b22);
-}
-
-.rg-box {
-  background: radial-gradient(#fa0547, #2c2b22);
+.radial-gradient {
+  background: radial-gradient(#f60146, #302a23);
 }
