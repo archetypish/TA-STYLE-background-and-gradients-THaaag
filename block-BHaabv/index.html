@@ -1,199 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
 
-    <!-- Kit -->
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/0a6bb8ec9a.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
   </head>
   <body>
-    <header class="dashboard-header">
-        <div class="container flex">
-            <div>
-                <h1>Social Media Dashboard</h1>
-                <p>Total Followers: 23,004</p>
-              </div>
-              <div class="flex">
-                <span class="dark-mode">Dark Mode</span>
-                <div class="toggle">
-                    <div class="toggle-switch"></div>
-                </div>
-              </div>
+    <header class="header">
+      <div class="container flex">
+        <div class="flex-col">
+          <h1 class="title">Social Media Dashboard</h1>
+          <h2 class="sub-title">Total Followers: 23,004</h2>
         </div>
-      
+        <div class="dark-mode-toggle">
+          <span class="dark-mode">Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="socials">
-        <div class="container flex">
-            <article class="social">
-                <div class="border-top fb"></div>
-                <header class="social-header">
-                  <h2>
-                    <a href="#"
-                    class="social-handlename">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <span>@nathanf</span>
-                    </a>
-                  </h2>
+      <div class="container">
+        <section class="summary">
+          <ul class="summary-list">
+            <li class="summary-item summary-facebook">
+              <article class="summary-article">
+                <header class="summary-header">
+                  <h3 class="summary-title">Facebook</h3>
+                  <div class="summary-header-visible">
+                    <i
+                      class="facebook social-icon fa-brands fa-square-facebook"
+                    ></i>
+                    <span class="social-handle">@nathanf</span>
+                  </div>
                 </header>
-                <section class="social-data">
-                  <h3 class="social-metric ">Followers</h3>
-                  <p class="social-metric-value">1987</p>
-                  <p class="social-metric-update green-text"><i class="fa-solid fa-caret-up"></i>12 Today</p>
-                </section>
+                <ul class="summary-stats-list">
+                  <li class="summary-followers">
+                    <span class="summary-follower-count">1987</span>
+                    <span class="summary-followers-stat">followers</span>
+                  </li>
+                  <li class="summary-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span>12 today</span>
+                  </li>
+                </ul>
               </article>
-              <article class="social">
-                <div class="border-top twitter"></div>
-                <header>
-                  <h2>
-                    <a href="#"
-                    class="social-handlename">
-                    <i class="fa-brands fa-twitter"></i>
-                    <span>@nathanf</span></a>
-                  </h2>
+            </li>
+            <li class="summary-item summary-twitter">
+              <article class="summary-article">
+                <header class="summary-header">
+                  <h3 class="summary-title">Twitter</h3>
+                  <div>
+                    <i class="twitter social-icon fa-brands fa-twitter"></i>
+                    <span class="social-handle">@nathanf</span>
+                  </div>
                 </header>
-                <section class="social-data">
-                  <h3 class="social-metric">Followers</h3>
-                  <p class="social-metric-value">1044</p>
-                  <p class="social-metric-update green-text"><i class="fa-solid fa-caret-up"></i>99 Today</p>
-                </section>
+                <ul class="summary-stats-list">
+                  <li class="summary-followers">
+                    <span class="summary-follower-count">1044</span>
+                    <span class="summary-followers-stat">followers</span>
+                  </li>
+                  <li class="summary-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span>99 today</span>
+                  </li>
+                </ul>
               </article>
-              <article class="social">
-                <div class="border-top ig"></div>
-                <header>
-                  <h2>
-                    <a href="#"
-                    class="social-handlename">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span>@realnathanf</span></a>
-                  </h2>
+            </li>
+            <li class="summary-item summary-instagram">
+              <article class="summary-article gradient-border">
+                <header class="summary-header">
+                  <h3 class="summary-title">Instagram</h3>
+                  <div>
+                    <i class="instagram social-icon fa-brands fa-instagram"></i>
+                    <span class="social-handle">@realnathanf</span>
+                  </div>
                 </header>
-                <section class="social-data">
-                  <h3 class="social-metric">Followers</h3>
-                  <p class="social-metric-value">11k</p>
-                  <p class="social-metric-update green-text"><i class="fa-solid fa-caret-up"></i>1099 Today</p>
-                </section>
+                <ul class="summary-stats-list">
+                  <li class="summary-followers">
+                    <span class="summary-follower-count">11k</span>
+                    <span class="summary-followers-stat">followers</span>
+                  </li>
+                  <li class="summary-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span>1099 today</span>
+                  </li>
+                </ul>
               </article>
-              <article class="social">
-                <div class="border-top yt"></div>
-                <header>
-                  <h2>
-                    <a href="#"
-                    class="social-handlename">
-                    <i class="fa-brands fa-youtube"></i>
-                    <span>Nathan F.</span></a>
-                  </h2>
+            </li>
+            <li class="summary-item summary-youtube">
+              <article class="summary-article">
+                <header class="summary-header">
+                  <h3 class="summary-title">YouTube</h3>
+                  <div>
+                    <i class="youtube social-icon fa-brands fa-youtube"></i>
+                    <span class="social-handle">Nathan F.</span>
+                  </div>
                 </header>
-                <section class="social-data">
-                  <h3 class="social-metric">Subscribers</h3>
-                  <p class="social-metric-value">8239</p>
-                  <p class="social-metric-update red-text"><i class="fa-solid fa-caret-down"></i>144 Today</p>
-                </section>
+                <ul class="summary-stats-list">
+                  <li class="summary-followers">
+                    <span class="summary-follower-count">8239</span>
+                    <span class="summary-followers-stat">subscribers</span>
+                  </li>
+                  <li class="summary-change down">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span>144 today</span>
+                  </li>
+                </ul>
               </article>
-        </div>
-      </section>
-      <section class="metrics-today">
-        <div class="container">
-            <h2 >Overview - Today</h2>
-            <div class="flex wrapped">
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Page Views</h3>
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">87</p>
-                        <p class="metric-update green-text"><i class="fa-solid fa-caret-up"></i>3%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Likes</h3>
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">52</p>
-                        <p class="metric-update red-text"><i class="fa-solid fa-caret-down"></i>2%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Likes</h3>
-                        <i class="fa-brands fa-instagram"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">5462</p>
-                        <p class="metric-update  green-text"><i class="fa-solid fa-caret-up"></i>2257%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Profile Views</h3>
-                        <i class="fa-brands fa-instagram"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">52k</p>
-                        <p class="metric-update green-text"><i class="fa-solid fa-caret-up"></i>1375%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Retweets</h3>
-                        <i class="fa-brands fa-twitter"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">117</p>
-                        <p class="metric-update green-text"><i class="fa-solid fa-caret-up"></i>303%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Likes</h3>
-                        <i class="fa-brands fa-twitter"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">507</p>
-                        <p class="metric-update green-text"><i class="fa-solid fa-caret-up"></i>553%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Likes</h3>
-                        <i class="fa-brands fa-youtube"></i></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">107</p>
-                        <p class="metric-update red-text"><i class="fa-solid fa-caret-down"></i>19%</p>
-                    </section>
-                </article>
-                <article class="metric">
-                    <header class="metric-header">
-                        <h3>Total Views</h3>
-                        <i class="fa-brands fa-youtube"></i>
-                    </header>
-                    <section class="metric-values">
-                        <p class="metric-value">1407</p>
-                        <p class="metric-update red-text"><i class="fa-solid fa-caret-down"></i>12%</p>
-                    </section>
-                </article>
-            </div>
-            
-        </div>
-      </section>
+            </li>
+          </ul>
+        </section>
+        <section class="statistics">
+          <header class="section-header">
+            <h2 class="section-title">Overview - Today</h2>
+          </header>
+          <ul class="statistics-list">
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Page Views</h4>
+                  <i
+                    class="facebook social-icon fa-brands fa-square-facebook"
+                  ></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">87</li>
+                  <li class="stat-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span class="stat-change-value">303%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Likes</h4>
+                  <i
+                    class="facebook social-icon fa-brands fa-square-facebook"
+                  ></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">52</li>
+                  <li class="stat-change down">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span class="stat-change-value">2%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Likes</h4>
+                  <i class="instagram fa-brands fa-instagram"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">5462</li>
+                  <li class="stat-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span class="stat-change-value">2257%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Profile Views</h4>
+                  <i class="instagram social-icon fa-brands fa-instagram"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">52k</li>
+                  <li class="stat-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span class="stat-change-value">1375%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Retweets</h4>
+                  <i class="twitter social-icon fa-brands fa-twitter"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">117</li>
+                  <li class="stat-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span class="stat-change-value">303%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Likes</h4>
+                  <i class="twitter social-icon fa-brands fa-twitter"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">507</li>
+                  <li class="stat-change up">
+                    <i class="fa-solid fa-sort-up"></i>
+                    <span class="stat-change-value">553%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Likes</h4>
+                  <i class="youtube social-icon fa-brands fa-youtube"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">107</li>
+                  <li class="stat-change down">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span class="stat-change-value">19%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="statistics-item">
+              <article class="statistic">
+                <header class="stat-header">
+                  <h4 class="stat-title">Total Views</h4>
+                  <i class="youtube social-icon fa-brands fa-youtube"></i>
+                </header>
+                <ul class="stats">
+                  <li class="stat-value">1407</li>
+                  <li class="stat-change down">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span class="stat-change-value">12%</span>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
   </body>
 </html>
